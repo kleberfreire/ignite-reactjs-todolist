@@ -1,0 +1,163 @@
+.header {
+  height: 200px;
+  background: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 736px;
+  margin: -1.6875rem auto 0 auto;
+}
+
+.info{
+  margin-top: 64px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoCreated {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+}
+
+.infoCreated span {
+  display: inline-block;
+  padding: 0 8px;
+  height: 19px;
+  margin-left: 8px;
+  border-radius: 10px;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoSuccess{
+  color: var(--purple);
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.infoSuccess span {
+  display: inline-block;
+  padding: 0 8px;
+  height: 19px;
+  margin-left: 8px;
+  border-radius: 10px;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noTodosMenssage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 88px;
+}
+
+.noTodosMenssage > img {
+  display: block;
+  width: 56px;
+  height: 56px;
+} 
+
+.noTodosMenssage > p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: var(--gray-300);
+  max-width: 314px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.todoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--gray-500);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 1rem;
+}
+
+.todoContainer > p {
+  font-size: 0.875rem;
+  line-height: 140%;
+}
+
+.todoContainer > button {
+  margin-left: 0.75rem;
+  border: none;
+  background: none;
+  color: var(--gray-300);
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.round { 
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.round label {
+  background-color: var(--gray-600);
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0x;
+  width: 24px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 4px;
+  left: 5.2px;
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 8px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+

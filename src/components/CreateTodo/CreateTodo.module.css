@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputCreate {
+  height: 52px;
+  width: 638px;
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: none;
+  color: var(--gray-300);
+  padding: 1rem;
+}
+
+.inputCreate:focus {
+  outline: 1px solid var(--blue-dark);
+}
+
+.buttonCreate {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  height: 54px;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.buttonCreate svg {
+  margin-left: 0.5rem;
+}
+
+.buttonCreate:hover {
+  background: var(--blue);
+}
